@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		form {
+			background-color: #ffffff;
+			border: 1px solid #cccccc;
+			padding: 20px;
+			max-width: 400px;
+			margin: 0 auto;
+			margin-top: 50px;
+			box-shadow: 0px 0px 10px #cccccc;
+			border-radius: 5px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			width: calc(100% - 45px);
+			padding: 10px;
+			border: 1px solid #cccccc;
+			border-radius: 3px;
+			margin-bottom: 20px;
+		}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #ffffff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 3px;
+			cursor: pointer;
+			margin-left: 30px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+
+		a {
+			display: inline-block;
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 3px;
+			margin-left: 25px;
+			font-size: 13px;
+		}
+
+		a:hover {
+			background-color: #3e8e41;
+		}
+
+		.my-image {
+			width: 300px;
+			height: auto;
+			margin-bottom: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+
+		}
+
+		h2 {
+			background-color: rgb(32, 32, 32);
+			color: white;
+			text-align: center;
+			padding: 10px;
+			margin-top: 0;
+		}
+
+		select[name="usertype"] {
+			width: 130px;
+			padding: 10px;
+			border: 1px solid #cccccc;
+			border-radius: 3px;
+			margin-bottom: 20px;
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+			appearance: none;
+			background-color: white;
+			background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23cccccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+			background-repeat: no-repeat;
+			background-position: right 10px center;
+			cursor: pointer;
+		}
+
+		select[name="usertype"] option {
+			font-size: 16px;
+			font-family: Arial, sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<form action="" method="post">
+		<h2>Login</h2>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username">
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password">
+
+		<select name="usertype">
+			<option value="Admin">Admin</option>
+			<option value="Applicant">Applicant</option>
+		</select>
+
+
+		<input type="submit" value="Login">
+		<a href="/register">Register</a>
+
+	</form>
+</body>
+
+</html>
